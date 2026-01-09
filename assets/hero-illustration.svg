@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="360" viewBox="0 0 560 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f1724" />
+      <stop offset="1" stop-color="#081026" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="360" rx="20" fill="url(#bg)" />
+  <!-- simplified decorative shapes to suggest an illustration -->
+  <g transform="translate(40,40)">
+    <ellipse cx="200" cy="200" rx="140" ry="120" fill="#122033" />
+    <rect x="260" y="60" width="180" height="120" rx="14" fill="#112233" />
+    <!-- controller icon -->
+    <g fill="#ff4da6" transform="translate(320,110)">
+      <rect x="-30" y="-14" width="68" height="28" rx="8" />
+      <circle cx="-10" cy="0" r="4" fill="#fff" />
+      <circle cx="10" cy="0" r="4" fill="#fff" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071023" />
+  <title>Features — NodeNest</title>
+  <meta name="description" content="Features — control panel, backups, mod support, and more." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8.5z"/></symbol>
+    <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="4" rx="1"/><rect x="13" y="9" width="8" height="12" rx="1"/></symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24"><path d="M21 8l-9 5-9-5 9-5 9 5z"/><path d="M3 8v8a1 1 0 0 0 1 1h16"/></symbol>
+    <symbol id="icon-puzzle" viewBox="0 0 24 24"><path d="M12 3v4h2a2 2 0 1 1 0 4h-4v6h4v4H6V13H4a2 2 0 1 1 0-4h2V3h6z"/></symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><rect x="3" y="9" width="6" height="2" rx="1"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M20 6H6.5A2.5 2.5 0 0 0 4 8.5V17"/></symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24"><path d="M21 3l-6 6"/><circle cx="7" cy="12" r="4"/></symbol>
+  </svg>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sb-brand">NodeNest</div>
+    <ul class="sb-nav">
+      <li><a href="index.html"><span class="icon">🏠</span> <span class="label">Homepage</span></a></li>
+      <li><a href="#"><span class="icon">📊</span> <span class="label">Dashboard</span></a></li>
+      <li><a href="#"><span class="icon">📦</span> <span class="label">Deploy Container</span></a></li>
+      <li class="active"><a href="features.html"><span class="icon">🧩</span> <span class="label">Services</span></a></li>
+      <li><a href="pricing.html"><span class="icon">💳</span> <span class="label">Pricing</span></a></li>
+      <li><a href="#"><span class="icon">📘</span> <span class="label">Documentation</span></a></li>
+    </ul>
+    <div class="sb-bottom">
+      <div class="visitor">visitor<br/><span class="muted small">guest@fps.ms</span></div>
+      <a class="btn client-panel" href="#"><span class="cp-icon">🔑</span> Client Panel</a>
+    </div>
+  </aside>
+
+  <main class="main-content container">
+    <h1>Features</h1>
+    <p class="lead">Everything you need to run game servers, bots and apps — control panel, backups, mod support, and more.</p>
+
+    <section class="features-grid">
+      <div class="feature-card">
+        <h3>File Manager</h3>
+        <p>Change config files, upload worlds, and manage files via SFTP or the web file manager.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Plugin & Mod Support</h3>
+        <p>Install plugins/mods, manage versions, and request managed installs as an add-on.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Snapshots & Backups</h3>
+        <p>Daily snapshots with easy restore — configurable retention per plan.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Bot Hosting</h3>
+        <p>Encrypted token storage, shard support, and auto-restarts on failure.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

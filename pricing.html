@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071023" />
+  <title>Pricing — NodeNest</title>
+  <meta name="description" content="Pricing plans for NodeNest hosting: Minecraft, Node.js, Python, and Discord bots." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8.5z"/></symbol>
+    <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="4" rx="1"/><rect x="13" y="9" width="8" height="12" rx="1"/></symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24"><path d="M21 8l-9 5-9-5 9-5 9 5z"/><path d="M3 8v8a1 1 0 0 0 1 1h16"/></symbol>
+    <symbol id="icon-puzzle" viewBox="0 0 24 24"><path d="M12 3v4h2a2 2 0 1 1 0 4h-4v6h4v4H6V13H4a2 2 0 1 1 0-4h2V3h6z"/></symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><rect x="3" y="9" width="6" height="2" rx="1"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M20 6H6.5A2.5 2.5 0 0 0 4 8.5V17"/></symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24"><path d="M21 3l-6 6"/><circle cx="7" cy="12" r="4"/></symbol>
+  </svg>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sb-brand">NodeNest</div>
+    <ul class="sb-nav">
+      <li><a href="index.html"><span class="icon">🏠</span> <span class="label">Homepage</span></a></li>
+      <li><a href="#"><span class="icon">📊</span> <span class="label">Dashboard</span></a></li>
+      <li><a href="#"><span class="icon">📦</span> <span class="label">Deploy Container</span></a></li>
+      <li><a href="#"><span class="icon">🧩</span> <span class="label">Services</span></a></li>
+      <li class="active"><a href="pricing.html"><span class="icon">💳</span> <span class="label">Pricing</span></a></li>
+      <li><a href="#"><span class="icon">📘</span> <span class="label">Documentation</span></a></li>
+    </ul>
+    <div class="sb-bottom">
+      <div class="visitor">visitor<br/><span class="muted small">guest@fps.ms</span></div>
+      <a class="btn client-panel" href="#"><span class="cp-icon">🔑</span> Client Panel</a>
+    </div>
+  </aside>
+
+  <main class="main-content container">
+    <h1>Pricing</h1>
+    <p class="lead">Simple, predictable pricing. Pay monthly or yearly (save 15% yearly).</p>
+
+    <section class="pricing-table">
+      <div class="plan">
+        <h3>Starter</h3>
+        <div class="plan-price">$3<span class="per">/mo</span></div>
+        <ul>
+          <li>1 GB RAM</li>
+          <li>10 GB Storage</li>
+          <li>1 vCPU</li>
+          <li>Community Support (Discord)</li>
+        </ul>
+        <p><a class="btn primary" href="https://discord.gg/your-invite">Get started</a></p>
+      </div>
+
+      <div class="plan featured">
+        <h3>Standard</h3>
+        <div class="plan-price">$10<span class="per">/mo</span></div>
+        <ul>
+          <li>4 GB RAM</li>
+          <li>40 GB Storage</li>
+          <li>2 vCPU</li>
+          <li>Daily Backups</li>
+        </ul>
+        <p><a class="btn primary" href="https://discord.gg/your-invite">Choose Standard</a></p>
+      </div>
+
+      <div class="plan">
+        <h3>Pro</h3>
+        <div class="plan-price">$24<span class="per">/mo</span></div>
+        <ul>
+          <li>8 GB RAM</li>
+          <li>100 GB Storage</li>
+          <li>4 vCPU</li>
+          <li>Priority Discord Support</li>
+        </ul>
+        <p><a class="btn primary" href="https://discord.gg/your-invite">Choose Pro</a></p>
+      </div>
+    </section>
+
+    <section class="add-ons">
+      <h2>Add-ons</h2>
+      <ul>
+        <li>Daily backups — $2/mo</li>
+        <li>Extra IPv4 — $3/mo</li>
+        <li>Managed mod installation — $10 one-time</li>
+      </ul>
+    </section>
+
+    <section class="notes">
+      <h2>Billing & refund policy</h2>
+      <p>Monthly billing charged via Stripe. 24-hour money-back guarantee on first purchase. Yearly plans get 15% off.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-left">© <span id="year2"></span> NodeNest</div>
+      <div class="foot-right"><a href="legal/terms.html">Terms</a> · <a href="legal/privacy.html">Privacy</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

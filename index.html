@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071023" />
+  <title>NodeNest — Discord-first Server Hosting</title>
+  <meta name="description" content="Minecraft, Node.js, Python and Discord bot hosting with instant provisioning and Discord-first support." />
+  <!-- Inter font for closer visual match -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Left sidebar (Discord-first navigation like the reference) -->
+  <aside class="sidebar">
+    <div class="sb-brand">NodeNest</div>
+    <!-- SVG sprite for consistent icons -->
+    <svg style="display:none" aria-hidden="true">
+      <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8.5z"/></symbol>
+      <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="4" rx="1"/><rect x="13" y="9" width="8" height="12" rx="1"/></symbol>
+      <symbol id="icon-package" viewBox="0 0 24 24"><path d="M21 8l-9 5-9-5 9-5 9 5z"/><path d="M3 8v8a1 1 0 0 0 1 1h16"/></symbol>
+      <symbol id="icon-puzzle" viewBox="0 0 24 24"><path d="M12 3v4h2a2 2 0 1 1 0 4h-4v6h4v4H6V13H4a2 2 0 1 1 0-4h2V3h6z"/></symbol>
+      <symbol id="icon-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><rect x="3" y="9" width="6" height="2" rx="1"/></symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M20 6H6.5A2.5 2.5 0 0 0 4 8.5V17"/></symbol>
+      <symbol id="icon-key" viewBox="0 0 24 24"><path d="M21 3l-6 6"/><circle cx="7" cy="12" r="4"/></symbol>
+    </svg>
+
+    <ul class="sb-nav">
+      <li class="active"><a href="index.html"><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home"/></svg><span class="label">Homepage</span></a></li>
+  <li><a href="https://store.ankitpupta.com.np" target="_blank" rel="noopener"><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-dashboard"/></svg><span class="label">Dashboard</span></a></li>
+      <li><a href="#"><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-package"/></svg><span class="label">Deploy Container</span></a></li>
+      <li><a href="#products"><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-puzzle"/></svg><span class="label">Services</span></a></li>
+      <li><a href="pricing.html"><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-card"/></svg><span class="label">Pricing</span></a></li>
+      <li><a href="#"><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-book"/></svg><span class="label">Documentation</span></a></li>
+    </ul>
+
+    <div class="sb-bottom">
+      <div class="visitor">visitor<br/><span class="muted small">guest@fps.ms</span></div>
+      <a class="btn client-panel" href="https://panel.ankitgupta.com.np" target="_blank" rel="noopener"><span class="cp-icon">🔑</span> Client Panel</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/hero-illustration.svg" alt="illustration" class="illu" />
+        </div>
+
+        <div class="hero-copy">
+          <h1>Server hosting built for Discord communities</h1>
+          <p class="lead">Minecraft, Node.js, Python and Discord bot hosting with instant provisioning, snapshots, and Discord-first support.</p>
+          <p class="hero-cta">
+            <a class="btn primary" href="https://discord.gg/your-invite" target="_blank" rel="noopener">Join Discord</a>
+            <a class="btn ghost" href="pricing.html">View Pricing</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <section id="products" class="container cards">
+      <article class="card">
+        <div class="card-icon">🪄</div>
+        <h3>Minecraft Hosting</h3>
+        <p>Paper/Spigot support, mods & plugins, scheduled backups and easy console access.</p>
+        <p class="muted">From 2GB RAM, world snapshots, plugin support.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>Node.js Hosting</h3>
+        <p>Multiple Node versions, PM2 support, environment variables and Git deploys.</p>
+        <p class="muted">From 1GB RAM, process manager and logs.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🐍</div>
+        <h3>Python Hosting</h3>
+        <p>Support for modern Python runtimes, virtualenv, and web app hosting (WSGI/gunicorn).</p>
+        <p class="muted">From 1GB RAM, easy dependency management.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Discord Bot Hosting</h3>
+        <p>Encrypted token storage, shard support, auto-restart, and Discord notifications.</p>
+        <p class="muted">Deploy from repo or Docker image.</p>
+      </article>
+    </section>
+
+    <section class="why container">
+      <h2>Why NodeNest?</h2>
+      <ul class="bullets">
+        <li>Discord-first support: community & private support channels.</li>
+        <li>Instant provisioning and predictable pricing.</li>
+        <li>Daily snapshots and easy restores.</li>
+      </ul>
+    </section>
+
+    <section class="pricing-teaser container">
+      <h2>Simple plans — scale later</h2>
+      <div class="pricing-row">
+        <div class="price-card selected">
+          <div class="price">$3/mo</div>
+          <div class="plan">Starter — 1GB</div>
+        </div>
+        <div class="price-card">
+          <div class="price">$10/mo</div>
+          <div class="plan">Standard — 4GB</div>
+        </div>
+        <div class="price-card">
+          <div class="price">$24/mo</div>
+          <div class="plan">Pro — 8GB</div>
+        </div>
+      </div>
+      <p class="center"><a class="btn ghost" href="pricing.html">See full pricing</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-left">© <span id="year"></span> NodeNest — Discord-first hosting</div>
+      <div class="foot-right"><a href="legal/terms.html">Terms</a> · <a href="legal/privacy.html">Privacy</a> · <a href="#">Status</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
