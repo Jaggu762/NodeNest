@@ -143,3 +143,29 @@ nav a.cta{background:transparent;border:1px solid rgba(255,255,255,0.06);padding
 @media (max-width:420px){
   .hero h1{font-size:1.4rem}
 }
+
+/* Footer (mega and mini) */
+.mega-footer{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02);padding:2rem;border-radius:14px;margin-top:2rem}
+.mega-footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;align-items:start}
+.mega-footer h4{color:var(--text);margin:0 0 0.8rem;font-size:1rem}
+.mega-footer ul{list-style:none;padding:0;margin:0}
+.mega-footer li{padding:0.45rem 0;color:var(--muted)}
+.mega-footer li a{color:var(--muted);text-decoration:none}
+.mega-footer .brand-block{text-align:right}
+.mega-footer .brand-block .logo{display:inline-flex;align-items:center;gap:10px;font-weight:700;color:var(--accent2)}
+.mega-footer .brand-block .sublabel{color:var(--muted);margin-top:0.6rem}
+
+.mini-footer{margin-top:1rem;padding:1rem;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:space-between}
+.mini-footer .left{display:flex;align-items:center;gap:0.8rem;color:var(--muted)}
+.mini-footer .left svg{width:30px;height:30px;fill:rgba(255,255,255,0.18)}
+.mini-footer .right{color:var(--muted)}
+
+@media (max-width:920px){
+  .mega-footer .cols{grid-template-columns:repeat(2,1fr)}
+  .mega-footer .brand-block{text-align:left;margin-top:1rem}
+}
+
+@media (max-width:520px){
+  .mega-footer .cols{grid-template-columns:1fr}
+  .mini-footer{flex-direction:column;align-items:flex-start;gap:0.6rem}
+}
